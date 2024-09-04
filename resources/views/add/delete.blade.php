@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="{{ route('delete_activity',['id' -> $activity->id]) }}" method="POST">
+    <form action="{{ route('destroy_activity',['id' => $activity->id]) }}" method="POST">
         @csrf
         <label for="">Tem certeza que deseja excluir esse usuario?</label>
         <input type="text" name="nome" value="{{$activity->nome}}">

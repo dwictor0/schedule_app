@@ -13,5 +13,8 @@ Route::post('/activity/register/', 'App\Http\Controllers\activitiesController@st
 Route::get('/activities/edit/{id}', 'App\Http\Controllers\activitiesController@edit');
 Route::post('/activities/edit/{id}', 'App\Http\Controllers\activitiesController@update')->name('edit_activity');
 
-Route::get('/activities/delete/{id}', 'App\Http\Controllers\activitiesController@delete');
-Route::post('/activities/delete/{id}','App\Http\Controllers\activitiesController@destroy')->name('delete_activity');
+Route::get('/activities/delete/{id}', 'App\Http\Controllers\activitiesController@delete')->name('delete_activity');
+Route::post('/activities/delete/{id}','App\Http\Controllers\activitiesController@destroy')->name('destroy_activity');
+
+Route::get('/activities/', 'App\Http\Controllers\activitiesController@index');
+
