@@ -29,7 +29,7 @@ class activitiesController extends Controller
        
        
        
-        
+        // $activity= activity::all();
         //return view('add.dashboard',compact('activity'));
 
         //$activity = data::all();
